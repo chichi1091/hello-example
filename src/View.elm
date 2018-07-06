@@ -8,6 +8,9 @@ import Update exposing (update)
 import Model exposing (Msg(..), Model, init)
 
 ---- VIEW ----
+
+-- HTML要素のレンダリング
+-- 「view : Model -> Html Msg」お約束？
 view : Model -> Html Msg
 view model =
     div []

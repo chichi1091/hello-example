@@ -7,7 +7,7 @@ import View exposing (view)
 
 ---- PROGRAM ----
 
-
+-- すべての結び付け
 main : Program Never Model Msg
 main =
     Html.program

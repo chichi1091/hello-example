@@ -1,14 +1,12 @@
-module Model exposing (Msg, Model, init)
+module Model exposing (Msg(..), Model, init)
 
 ---- MODEL ----
 type Msg
-    = NoOp
-
+    = HelloWorld
 
 type alias Model =
-    {}
-
+    {comment: String}
 
 init : ( Model, Cmd Msg )
 init =
-    ( {}, Cmd.none )
+    ( {comment = "Your Elm App is working!"}, Cmd.none )

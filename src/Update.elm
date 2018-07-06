@@ -1,8 +1,9 @@
 module Update exposing (update)
-import Model exposing (Msg, Model)
 
+import Model exposing (Msg(..), Model)
 ---- UPDATE ----
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    ( model, Cmd.none )
+    case msg of
+        HelloWorld ->
+            ( { model | comment = "Hello World!" }, Cmd.none )
